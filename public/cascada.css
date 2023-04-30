@@ -1,0 +1,292 @@
+/*selectores  son 3 - etiqueta, -clase, -id*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700,800.900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* carousl de imagenes*/
+.d-item{
+    height: 500px;
+}
+
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+.dima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    /*--width: 100%;*/
+    
+    
+}
+
+.sec {
+    display: flex;
+    
+    width: 80%;
+    height: 300px;
+
+}
+
+.sec img {
+    width: 0px;
+    flex-grow: 1;
+    
+    object-fit: fill;
+    opacity: .10;
+    transition: .5s ease;
+
+}
+
+.sec img:hover {
+    cursor: crosshair;
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*portafolios*/
+.em {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.des {
+    font-weight: 500;
+    font-size: 15px;
+    color: darkgray;
+
+}
+
+.h33 {
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.h44 {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(77, 72, 72);
+}
+
+.cardd, .cardd2{
+    position: relative;
+    
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.cardd{
+    left: 50px;
+    top:-2px;
+}
+.cardd2{
+    top:-200px;
+    left: 500px;
+
+}
+
+
+.cardd2:hover,.cardd:hover  {
+    height: 450px;
+}
+
+.pb {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-image: url('images/card-perf.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease-in-out;
+
+
+
+}
+
+.cardd2:hover .pb, .cardd:hover .pb  {
+    height: 250px;
+    width: 250px;
+}
+
+.infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 125px 0px 10px 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.cardd:hover .infor, .cardd2:hover .infor {
+    display: flex;
+    padding: 230px 0px 10px 0px;
+}
+
+.detaill {
+    position: relative;
+    display: flex;
+    opacity: 0;
+    z-index: -10;
+    justify-content: space-between;
+    padding: 10px 50px;
+    transform: translateX(-20px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.2s, 0.2s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0.2s, 0s, 0s;
+}
+
+.coll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.buttonss {
+    position: relative;
+    display: flex;
+    opacity: 0;
+    z-index: -10px;
+    padding: 10px 50px;
+    justify-content: space-between;
+    padding: 10px 50px;
+    transform: translateX(-20px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.2s, 0.2s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0.2s, 0s, 0s;
+}
+
+#followw,#messagee {
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#followw {
+    background-color: #ff5f96;
+    border: 1px solid #ff5f96;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s linear;
+
+}
+
+#followw:hover {
+    background-color: #ff5f96;
+
+}
+
+#messagee {
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+    font-weight: 500;
+    transition: all 0.5s linear;
+
+}
+
+#messagee:hover {
+    color: #fff;
+    background-color: darkgray;
+
+}
+
+.cardd2:hover .detaill,
+.cardd2:hover .buttonss,.cardd:hover .detaill,
+.cardd:hover .buttonss {
+    opacity: 1;
+    z-index: 2;
+    transform: translateX(0px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.3s, 0.3s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0s, 0.2s, 0.2s;
+}
+
+/*footer
+*/
+footer{
+    background:linear-gradient(50deg, rgb(73, 10, 75)1%, rgb(3, 12, 29)30%);
+    padding: 55px 0;
+    
+}
+
+.single-box p{
+    color:white;
+    line-height: 1.9;;
+}
+.single-box h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.single-box .card-area i{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.single-box ul{
+    list-style: none;
+    padding:0;
+}
+
+.single-box ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.0;
+    font-weight: 100;
+}
+
+.single-box h2{
+    color: rgb(28, 84, 112);
+font-size: 20px;
+font-weight: 700;
+}
+#basic-addon2{
+    background: #ff5f96;
+    color: #fff;
+}
+.socials i{
+font-size: 18px;
+margin-right: 15px;
+color:#fff;
+}
+@media (max-width: 767px){
+    .single-box{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .single-box{
+        margin-bottom: 50px;
+    }
+}
+
